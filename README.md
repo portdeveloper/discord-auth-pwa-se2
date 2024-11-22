@@ -87,3 +87,38 @@ To know more about its features, check out our [website](https://scaffoldeth.io)
 We welcome contributions to Scaffold-ETH 2!
 
 Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+
+## Discord Role Management
+
+The application supports role management for two Discord servers:
+- Monad Server
+- Monad Developers Server
+
+Roles are automatically fetched and displayed when a user connects with Discord. The system maps role IDs to human-readable names for better user experience.
+
+## Architecture
+
+### Key Components
+
+1. **Discord Authentication**
+   - Implemented using NextAuth.js with Discord provider
+   - Custom session handling with role management
+   - Automatic role fetching from Discord API
+
+2. **Role Display**
+   - Real-time role updates
+   - Separate display for different Discord servers
+   - Loading states and error handling
+
+3. **UI Components**
+   - Discord connection button in header
+   - Role display card on main page
+   - Loading states and error messages
+
+## Contributing
+
+Contributions are welcome! Please check out our [contribution guidelines](CONTRIBUTING.md) for details.
+
+## License
+
+MIT
