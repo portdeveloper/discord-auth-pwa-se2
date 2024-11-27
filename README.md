@@ -1,4 +1,4 @@
-# 🏗 Scaffold-ETH 2 + Serwist
+# 🏗 Scaffold-ETH 2 + Serwist + Discord Auth + Monad Roles
 
 <h4 align="center">
   <a href="https://docs.scaffoldeth.io">Documentation</a> |
@@ -15,8 +15,8 @@
 - 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
 - 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
 - 🛠 **Serwist Integration**: Leverage the power of [Serwist](https://serwist.pages.dev/) for PWA features.
-
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
+- 🎮 **Discord Authentication**: Built-in Discord auth with role management for Monad servers.
+- 🔔 **Web Push Notifications**: Engage users with push notifications, even when the app is closed.
 
 ## Requirements
 
@@ -28,13 +28,11 @@ Before you begin, you need to install the following tools:
 
 ## Quickstart
 
-To get started with Scaffold-ETH 2, follow the steps below:
-
 1. Clone this repo & install dependencies
 
 ```
-git clone https://github.com/scaffold-eth/scaffold-eth-2.git
-cd scaffold-eth-2
+git clone https://github.com/portdeveloper/discord-auth-pwa-se2
+cd discord-auth-pwa-se2
 yarn install
 ```
 
@@ -76,44 +74,25 @@ yarn generate-vapid-keys
 - Edit your smart contract test in: `packages/hardhat/test`. To run test use `yarn hardhat:test`
 - You can add your Alchemy API Key in `scaffold.config.ts` if you want more reliability in your RPC requests.
 
+## Discord Integration
+
+The application includes built-in Discord authentication and role management for:
+
+- Monad Server
+- Monad Developers Server
+
+Features:
+
+- Automatic role fetching when connecting with Discord
+- Role ID to human-readable name mapping
+- Real-time role updates
+- Loading states and error handling
+
 ## Documentation
 
 Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
 
 To know more about its features, check out our [website](https://scaffoldeth.io).
-
-## Contributing to Scaffold-ETH 2
-
-We welcome contributions to Scaffold-ETH 2!
-
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
-
-## Discord Role Management
-
-The application supports role management for two Discord servers:
-- Monad Server
-- Monad Developers Server
-
-Roles are automatically fetched and displayed when a user connects with Discord. The system maps role IDs to human-readable names for better user experience.
-
-## Architecture
-
-### Key Components
-
-1. **Discord Authentication**
-   - Implemented using NextAuth.js with Discord provider
-   - Custom session handling with role management
-   - Automatic role fetching from Discord API
-
-2. **Role Display**
-   - Real-time role updates
-   - Separate display for different Discord servers
-   - Loading states and error handling
-
-3. **UI Components**
-   - Discord connection button in header
-   - Role display card on main page
-   - Loading states and error messages
 
 ## Contributing
 
