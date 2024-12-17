@@ -28,6 +28,16 @@ const MONAD_SERVER_ROLES: Record<string, string> = {
   "1051562453495971941": "nads",
   "1194003002298740816": "localnads",
   "1072682201658970112": "full access",
+  "1234915103267094528": "IRL",
+  "1225505808058548295": "TG⨀",
+  "1151563303827554334": "monartist",
+  "1050582402776436756": "1)what",
+  "1217522152497086524": "pipeline intern",
+  "1037205170397904956": "pioneer",
+  "1085044350939050075": "Running Hot",
+  "1169411756972593253": "monvideo",
+  "1195097123599962193": "yaps",
+
 };
 
 const MONAD_DEV_ROLES: Record<string, string> = {
